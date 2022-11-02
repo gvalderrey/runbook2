@@ -1,11 +1,11 @@
 function activity1($act_param1){ 
-    $act_param1 
+    
     $result = $act_param1 + " algo"
     return $result
 }
 
 function activity2($act_param2){ 
-    $act_param1 
+   
     $result = $act_param2 + " algo mas"
     return $result
 }
