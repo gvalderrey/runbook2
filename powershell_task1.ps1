@@ -15,10 +15,13 @@ $PS0 = powershell{
         return $var
 }
 
-$ps = powershell{
-        $var1 = $PS0 + " ps0"
-        return = $var1
-}
+function pshell($paramps0){
+        $var1 = $paramps0 + " ps0"
+        return $var1
+} 
+
+$Ps = pshell -paramps0 $PS0
+
 $act1_result = activity1 -act_param1 $PS
 $act1_result
 Start-Sleep 10
