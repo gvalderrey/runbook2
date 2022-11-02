@@ -10,11 +10,15 @@ function activity2($act_param2){
     return $result
 }
 
-$PS = powershell{
+$PS0 = powershell{
         $var = "Gustavo"
         return $var
 }
 
+$ps = powershell{
+        $var1 = $PS0 + " ps0"
+        return = $var1
+}
 $act1_result = activity1 -act_param1 $PS
 $act1_result
 Start-Sleep 10
