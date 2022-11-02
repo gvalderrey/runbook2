@@ -6,12 +6,12 @@
 pool:
   name: self-hosted-pool
 
+schedules:
 - cron: "*/5 * * * *"
-  displayname: "every hour"
+  displayName: every hour
   branches:
-  include:
-  - main
-  always: true
+    include:
+    - main
 
 steps:
 - task: PowerShell@2
