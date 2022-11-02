@@ -3,17 +3,18 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger: none
 
 pool:
   name: self-hosted-pool
 
 schedules:
 - cron: "*/5 * * * *"
+  always: true
   displayName: every hour
   branches:
     include:
     - main
+
 
 steps:
 - task: PowerShell@2
