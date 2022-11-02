@@ -6,13 +6,13 @@ function activity1($act_param1){
 
 function activity2($act_param2){ 
    
-    $result = $act_param2 + " algo mas"
+    $result = $act_param2 + " 10 seg despues"
     return $result
 }
 
 $var = "Gustavo"
 $act1_result = activity1 -act_param1 $var
-
+Start-Sleep 10
 activity2 -act_param2 $act1_result
 
 
