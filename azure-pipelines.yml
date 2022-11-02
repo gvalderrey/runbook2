@@ -10,7 +10,7 @@ pool:
 schedules:
 - cron: "*/5 * * * *"
   always: true
-  displayName: every hour
+  displayName: every 5 minutes
   branches:
     include:
     - main
