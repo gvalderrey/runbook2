@@ -7,14 +7,7 @@
 pool:
   name: self-hosted-pool
 
-schedules:
-- cron: "*/5 * * * *"
-  always: true
-  displayName: every 5 minutes
-  branches:
-    include:
-    - main
-
+trigger: none
 
 steps:
 - task: PowerShell@2
